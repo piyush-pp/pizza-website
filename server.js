@@ -21,6 +21,13 @@ app.get('/cart' ,(re,res)=>{
     res.render('customers/cart') 
 })
 
+app.get('/login',(re,res)=>{
+    res.render('auth/login')
+})
+
+app.get('/register',(re,res)=>{
+    res.render('auth/register')
+})
 
 app.listen(PORT, (re, res) => {
     console.log('server started')
